@@ -28,7 +28,7 @@
 - The following is an example of running consumer containers, specifically subscribing them to partitions 0 and 1 of a topic named `colors`. 
     - ConsumerA:
       ```bash
-      docker run --rm --it \
+      docker run --rm -it \
       -e GROUP_ID="grouped" \
       -e TOPIC="colors" \
       -e AUTO_OFFSET_RESET="latest" \
